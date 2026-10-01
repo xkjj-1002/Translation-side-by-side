@@ -2,13 +2,13 @@
 
 按一下 `Alt / Option + T`，在网页外语正文下方显示中文译文，保留原文，随时隐藏或恢复。
 
-适用于 Chrome / Edge 桌面版。当前发布版本：**v0.2.1**。
+适用于 Chrome / Edge 桌面版。当前发布版本：**v0.2.2**。
 
 **[下载发布版本](https://github.com/xkjj-1002/Translation-side-by-side/releases/latest)** · [安装与更新](docs/INSTALL.md) · [隐私说明](docs/PRIVACY.md) · [反馈问题](https://github.com/xkjj-1002/Translation-side-by-side/issues)
 
 ## 安装
 
-1. 在发布页下载附件 **`instant-translate-v0.2.1.zip`**，解压到准备长期保留的文件夹。
+1. 在发布页下载附件 **`instant-translate-v0.2.2.zip`**，解压到准备长期保留的文件夹。
 2. 打开 `chrome://extensions` 或 `edge://extensions`，启用开发者模式。
 3. 点击「加载已解压的扩展程序」，选择解压后包含 `manifest.json` 的目录。
 4. 在自动打开的设置页选择翻译引擎，并测试连接。
