@@ -8,6 +8,16 @@
 
 ## 安装
 
+**方式一：Edge 加载项商店（审核通过后可用，推荐）**
+
+本扩展已提交 Microsoft Edge 加载项商店，审核通过后即可一键安装，并由商店自动更新：
+
+<https://microsoftedge.microsoft.com/addons/detail/jbfkfiagchndpdhhdnhikpofbmajfrmj>
+
+在审核通过之前，请用下面的手动安装方式。
+
+**方式二：手动安装（Edge / Chrome）**
+
 1. 在发布页下载附件 **`instant-translate-v0.2.2.zip`**，解压到准备长期保留的文件夹。
 2. 打开 `chrome://extensions` 或 `edge://extensions`，启用开发者模式。
 3. 点击「加载已解压的扩展程序」，选择解压后包含 `manifest.json` 的目录。
@@ -15,7 +25,7 @@
 
 **请下载 Release 中的扩展 ZIP。** 首页 `Code → Download ZIP` 和 Release 下的 `Source code` 只包含产品说明，不是扩展安装包。
 
-目前通过 GitHub 提供手动安装，尚未提供已上架的商店安装入口；此方式需手动更新。本仓库公开，任何账号都可以下载安装包并提交反馈。
+手动安装需要自己替换文件来更新；商店版本由商店自动更新。Chrome 版本目前只提供手动安装。本仓库公开，任何账号都可以下载安装包并提交反馈。
 
 ## 开始翻译
 
