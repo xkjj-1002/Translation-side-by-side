@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "即时翻译 · 双语对照",
+  "version": "0.2.1",
+  "description": "按一下快捷键，当前网页的外语正文在每段下方直接出现中文译文，原文保留，可随时切回。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://openapi.youdao.com/*"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "bg/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "即时翻译（Alt+T）",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "toggle-translate": {
+      "suggested_key": { "default": "Alt+T" },
+      "description": "翻译 / 隐藏 / 恢复当前页译文"
+    },
+    "toggle-visibility": {
+      "suggested_key": { "default": "Alt+Shift+T" },
+      "description": "显示 / 隐藏已翻译的译文"
+    }
+  }
+}

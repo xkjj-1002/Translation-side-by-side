@@ -1,0 +1,236 @@
+:root {
+  color-scheme: light dark;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 32px 20px 60px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 20px; margin: 0 0 6px; }
+
+h2 {
+  font-size: 14px;
+  margin: 0 0 12px;
+  color: #3b82f6;
+  letter-spacing: 0.02em;
+}
+
+.lead { color: #6b7280; margin: 0 0 24px; }
+
+.lead kbd { vertical-align: 1px; }
+
+kbd {
+  padding: 1px 5px;
+  border: 1px solid rgba(120, 120, 120, 0.5);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+}
+
+section {
+  padding: 18px 0;
+  border-top: 1px solid rgba(120, 120, 120, 0.22);
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.field.inline {
+  grid-template-columns: auto 1fr;
+}
+
+.field span { color: #4b5563; }
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  padding: 7px 9px;
+  border: 1px solid rgba(120, 120, 120, 0.42);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+input:focus, select:focus { outline: 2px solid rgba(59, 130, 246, 0.4); border-color: #3b82f6; }
+
+input[type="checkbox"] { width: 16px; height: 16px; }
+
+.note { color: #6b7280; font-size: 12.5px; margin: 0 0 12px; }
+
+.field-block { margin-bottom: 10px; }
+
+.field-block .field { margin-bottom: 4px; }
+
+.field-note { margin: 0 0 0 202px; }
+
+textarea {
+  padding: 7px 9px;
+  border: 1px solid rgba(120, 120, 120, 0.42);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  font-family: ui-monospace, monospace;
+  resize: vertical;
+}
+
+textarea:focus { outline: 2px solid rgba(59, 130, 246, 0.4); border-color: #3b82f6; }
+
+details { margin: 6px 0 10px; }
+
+summary {
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 12.5px;
+  margin-bottom: 8px;
+}
+
+.presets { flex-wrap: wrap; margin: 4px 0 8px; }
+
+button.ghost {
+  border-color: rgba(120, 120, 120, 0.45);
+  color: inherit;
+  padding: 4px 10px;
+  font-size: 12.5px;
+}
+
+button.ghost:hover { background: rgba(120, 120, 120, 0.12); }
+
+.rules { display: grid; gap: 8px; }
+
+.rule-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid rgba(120, 120, 120, 0.28);
+  border-radius: 8px;
+}
+
+.rule-row .note { margin: 2px 0 0; }
+
+.rule-host { font-family: ui-monospace, monospace; font-size: 13px; }
+
+code {
+  background: rgba(120, 120, 120, 0.14);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+a { color: #3b82f6; }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 7px 14px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  background: transparent;
+  color: #3b82f6;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover { background: rgba(59, 130, 246, 0.1); }
+
+/* 测试结果必须一眼看见：原先只是一行灰色小字，容易被当成「按钮没反应」 */
+.result {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #6b7280;
+}
+
+.result:empty { padding: 0; }
+
+.result.ok {
+  color: #14532d;
+  background: #dcfce7;
+}
+
+.result.err {
+  color: #7f1d1d;
+  background: #fee2e2;
+  font-weight: 500;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+footer {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(120, 120, 120, 0.22);
+  text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  .lead, .note, .field span, .result { color: #9ca3af; }
+  .result.ok { color: #4ade80; }
+}
+
+.diag {
+  display: block;
+  margin-top: 6px;
+  color: #9ca3af;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  text-align: right;
+}
+
+/* 「刚才为什么翻不了」的横幅：必须在最显眼的位置 */
+.banner {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px solid #fca5a5;
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #7f1d1d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.banner h2 {
+  margin: 0 0 6px;
+  font-size: 13.5px;
+  color: #991b1b;
+}
+
+.banner p { margin: 4px 0; }
+
+.banner button { margin-top: 8px; }
+
+@media (prefers-color-scheme: dark) {
+  .banner { background: rgba(153, 27, 27, 0.18); color: #fecaca; border-color: #b91c1c; }
+  .banner h2 { color: #fecaca; }
+}
