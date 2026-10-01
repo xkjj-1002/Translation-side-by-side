@@ -2,6 +2,14 @@
 
 ## 首次安装
 
+### Edge 加载项商店
+
+扩展已提交 Microsoft Edge 加载项商店，审核通过后可直接在商店安装，并由商店自动更新：
+
+<https://microsoftedge.microsoft.com/addons/detail/jbfkfiagchndpdhhdnhikpofbmajfrmj>
+
+### 手动安装（Edge / Chrome）
+
 在 [Releases](https://github.com/xkjj-1002/Translation-side-by-side/releases/latest) 下载 `instant-translate-vX.Y.Z.zip`，不要下载 Source code 或首页 Code 菜单里的 ZIP。
 
 解压 ZIP，确保选择的文件夹第一层有 `manifest.json`、`content.js`、`bg/`、`icons/`、`options/` 和 `popup/`。将文件夹保留在固定位置，加载后不要删除。
@@ -15,7 +23,7 @@ Chrome 打开 `chrome://extensions`，Edge 打开 `edge://extensions`。开启�
 3. 在扩展管理页点击原扩展的重新加载按钮，然后刷新要翻译的网页。
 4. 检查扩展管理页显示的版本号，并测试设置与翻译功能。不要先卸载原扩展，卸载可能清除设置。
 
-保持路径不变可以避免加载为第二份扩展。加载已解压的扩展不会自动获取 GitHub 更新。
+保持路径不变可以避免加载为第二份扩展。加载已解压的扩展不会自动获取 GitHub 更新；通过商店安装的版本由商店自动更新，不需要手工替换文件。
 
 ## 回到旧版
 
